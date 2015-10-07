@@ -216,7 +216,7 @@ ul>li>a.flag {
 .carousel {
   height: 768px;
   margin-bottom: 30px;
-	background: url('../images/top.png') 50% 50% no-repeat;
+	background: url('../images/top.jpg') 50% 50% no-repeat;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
