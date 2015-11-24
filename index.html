@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
@@ -53,7 +53,7 @@
                 <li><a href="#technical_features">Technical Features</a></li>
                 <li><a href="#engine">Engine</a></li>
                 <li><a href="#upgrades">Upgrades</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" data-toggle="modal">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -74,7 +74,7 @@
               <h1>The perfect addition to your fleet</h1>
               <p class="lead">a high performance option for the UH-1H</p>
               <p>
-								<a class="btn btn-lg btn-primary" href="#" role="button">More Information</a><br/>
+								<a class="btn btn-lg btn-primary" href="#contact" role="button" data-toggle="modal">More Information</a><br/>
 								<small>PCS Aerospace & Marketing Chile</small>
 							</p>
             </div>
@@ -97,47 +97,47 @@
 			<h2>Full technical features for UH-1H</h2>
 			<div id="features">
 				<div class="row">
-					<div class="col-md-2 hidden-sm"></div>
-					<div class="col-md-4 col-sm-12">
+					<div class="col-md-2 hidden-xs hidden-sm"></div>
+					<div class="col-md-4 col-sm-12 p">
 						<h4>Optional main rotor blades</h4>
-						<p>High performance new built composite blades will be available in mid-late 2007 and will provide a dramatic performance improvement over any other blade on the UH-1H.</p>
+						High performance new built composite blades will be available in mid-late 2007 and will provide a dramatic performance improvement over any other blade on the UH-1H.
 					</div>
-					<div class="col-md-1 hidden-sm"></div>
-					<div class="col-md-4 col-sm-12">
+					<div class="col-md-1 hidden-xs hidden-sm"></div>
+					<div class="col-md-4 col-sm-12 p">
 						<div class="row spacer-80"></div>
 						Tailboom is upgraded with the BLR Strake kit with FAA approved  performance enhancement. Requires less tail rotor input for improved power to the main rotor.
 					</div>
 				</div>
-				<div class="row spacer-120 hidden-sm"></div>
+				<div class="row spacer-120 hidden-xs hidden-sm"></div>
 				<div class="row">
-					<div class="col-md-3 col-sm-12">
+					<div class="col-md-3 col-sm-12 p">
 						<div class="row">
-							<div class="col-md-1 hidden-sm"></div>
-							<div class="col-md-10 col-sm-12">
+							<div class="col-md-1 hidden-xs hidden-sm"></div>
+							<div class="col-md-10 col-sm-12 p">
 								<h4>Optional Upgraded cockpit</h4>
 								Fully integrated sagen glass cockpit withoptional 2-axis autopilot.
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 hidden-sm"></div>
+					<div class="col-md-6 hidden-xs hidden-sm"></div>
 					<div class="col-md-3 col-sm-12">
-						<div class="row spacer-80 hidden-sm"></div>
+						<div class="row spacer-80 hidden-xs hidden-sm"></div>
 						<div class="row">
-							<div class="col-md-2 hidden-sm"></div>
-							<div class="col-md-10 col-sm-12">
+							<div class="col-md-2 hidden-xs hidden-sm"></div>
+							<div class="col-md-10 col-sm-12 p">
 								Tailboom BLR Fast fin is installed for improved tail rotor performance. This improvement is gained by “un-shading” the tail rotor.
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row spacer-50 hidden-sm"></div>
+				<div class="row spacer-50 hidden-xs hidden-sm"></div>
 				<div class="row">
-					<div class="col-md-4 hidden-sm"></div>
-					<div class="col-md-3 col-sm-12">
+					<div class="col-md-4 hidden-xs hidden-sm"></div>
+					<div class="col-md-3 col-sm-12 p">
 						Engine is upgraded from T53-13 of 1400SHP to T53-703 of 1800SHP for hot temperature and high altitude performance.
 					</div>
-					<div class="col-md-1 hidden-sm"></div>
-					<div class="col-md-3 col-sm-12">
+					<div class="col-md-1 hidden-xs hidden-sm"></div>
+					<div class="col-md-3 col-sm-12 p">
 						Tailboom 42º gearbox upgraded to bell 212 unir for improvedsafety and a TBO of 5000 Hours.
 					</div>
 				</div>
@@ -152,6 +152,7 @@
 				<div class="col-md-6 rip-top">
 					<div class="area">
 						<h2>Honeywell T53-L-703 Engine</h2>
+						<div id="width"></div>
 						<p>Honeywell, the manufacturer of the T53 series engines, estimates that the T53 series engine has operated safely and reliably for over 70,000,000 flight hours.</p>
 						<p>Many authorities believe this to be the most reliable helicopter turbine engine ever developed. The original equipment T53-L-13B at 1400 horsepower, while extremely reliable, has proven to be underpowered at high elevations and hot temperatures.</p>
 						<p>The upgraded T53-L-703 at 1800 horsepower, solves this problem.</p>
@@ -164,13 +165,13 @@
 		<div class="container" id="upgrades">
 			<h2>Upgrades for your UH-1H</h2>
 			<div class="row">
-				<div class="col-md-5 sm">
-					<span class="avionic-upgrade-1 sm img-rounded"></span>
+				<div class="col-md-5 hidden-xs hidden-sm">
+					<span class="avionic-upgrade-1 img-rounded"></span>
 				</div>
 				<div class="col-md-7">
 					<h3>Avionics Upgrades <span class="label label-success">NEW</span></h3>
 					<p>The UH-1H Plus can receive a tremendous technological upgrade with the introduction of an integrated “glass cockpit”. Flight instruments may be integrated into two separate and redundant displays that ease pilot work load and provide many features not available with old analog gauges.</p>
-					<p class="text-center xs"><span class="avionic-upgrade-1 xs img-rounded"></span></p>
+					<p class="text-center hidden-md hidden-lg"><span class="avionic-upgrade-1 img-rounded"></span></p>
 				</div>
 			</div>
 			<div class="row spacer-30"></div>
@@ -179,36 +180,75 @@
 					<h3>Avionics Upgrades <span class="label label-success">NEW</span></h3>
 					<p>Another important upgrade Northwest Helicopter incorporates into all of their performance enhanced UH-1H Plus aircraft is the installation of the Global Helicopter Technology Improved Vertical Fin Spar.</p>
 					<p>The Global Spar eliminates the problems associated with the original equipment “laminated” spar that was prone to cracking. This spar is indestructible and adds to the already phenomenal safety and reliability record of the UH-1H Plus.</p>
-					<p class="text-center xs"><span class="avionic-upgrade-2 xs img-rounded"></span></p>
+					<p class="text-center hidden-md hidden-lg"><span class="avionic-upgrade-2 img-rounded"></span></p>
 				</div>
-				<div class="col-md-5 text-right sm">
-					<span class="avionic-upgrade-2 sm img-rounded"></span>
+				<div class="col-md-5 text-right hidden-xs hidden-sm">
+					<span class="avionic-upgrade-2 img-rounded"></span>
 				</div>
 			</div>
 			<div class="row spacer-30"></div>
 			<div class="row">
-				<div class="col-md-5 sm">
-					<span class="avionic-upgrade-3 sm img-rounded"></span>
+				<div class="col-md-5 hidden-xs hidden-sm">
+					<span class="avionic-upgrade-3 img-rounded"></span>
 				</div>
 				<div class="col-md-7">
 					<h3>Improved Vertical Spar Fin</h3>
 					<p>Historically a weak point of the Bell UH-1H when used in extreme enviroments is the 204-040-003, 42o gearbox. While it has provided a uniquely long military service life, a better option is now available</p>
 					<p>Northwest helicopter installs upgraded 212-040-003, 42o gearbox on the performance enhanced Bell UH-1H Plus. this gearbox is virtually indestructible and with it’s 5000 hours overhaul interval is very cost effective to operate.</p>
-					<p class="text-center xs"><span class="avionic-upgrade-3 xs img-rounded"></span></p>
+					<p class="text-center hidden-md hidden-lg"><span class="avionic-upgrade-3 img-rounded"></span></p>
 				</div>
 			</div>
 
 			<div class="row spacer-120"></div>
 			<div class="row text-center">
-				<a class="btn btn-lg btn-primary" href="#" role="button">More Information</a><br/>
+				<a class="btn btn-lg btn-primary" href="#contact" role="button" data-toggle="modal">More Information</a><br/>
 				<small>PCS Aerospace & Marketing Chile</small>
 			</div>
 		</div>
+
+
+		<div id="contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+						<h3 id="contactLabel">Contact us</h3>
+					</div>
+					<div class="modal-body clearfix">
+						<form class="form-horizontal col-sm-12">
+							<div class="form-group">
+								<label>Name</label>
+								<input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"/>
+							</div>
+							<div class="form-group">
+								<label>E-Mail</label>
+								<input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"/>
+							</div>
+							<div class="form-group">
+								<label>Phone</label>
+								<input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"/>
+							</div>
+							<div class="form-group">
+								<label>Message</label>
+								<textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea>
+							</div>
+							<div class="form-group">
+								<p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-success">Send</button>
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/uh1h.js"></script>
-  </body>
+	</body>
 </html>
