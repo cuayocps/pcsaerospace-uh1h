@@ -1,4 +1,11 @@
-
+<?php
+$url = array(
+		strtolower(preg_replace('/^([^\/]+).*$/', '$1', $_SERVER['SERVER_PROTOCOL'])) . ':/',
+		$_SERVER['SERVER_NAME'],
+		str_replace('/', '', $_SERVER['REQUEST_URI'])
+);
+$absolute_url = implode('/', array_filter($url));
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,14 +34,13 @@
   <body>
     <nav class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-uh1h navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
               </a>
-              <span class="navbar-brand">UH-1H</span>
+              <a class="navbar-brand" href="<?php echo $absolute_url; ?>">UH-1H</a>
 							<div class="dropdown pull-left" style="display: none">
 								<a class="btn btn-uh1h dropdown-toggle flag flag-us" type="button" id="choosecountry" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									United States
