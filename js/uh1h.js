@@ -49,12 +49,10 @@ $('#contact [type="submit"]').click(function (event) {
 });
 
 $('#contact form').submit(function (event) {
-	//event.preventDefault();
+	event.preventDefault();
 	$('#contact [type="submit"]').html('Sending...');
 	$('#contact button').addClass('disabled').attr('disabled', 'disabled');
 	$form = $(this);
-	$form.attr('method', 'post');
-	return;
 	$.post($form.attr('action'), $form.serialize(), function (reply) {
 		$('#contact button').removeClass('disabled').removeAttr('disabled');
 		$('#contact [type="submit"]').html('Send');

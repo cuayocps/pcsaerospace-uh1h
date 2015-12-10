@@ -14,7 +14,7 @@
 	require_once "Mail/mime.php";
 
 	$from = '<cuayocps@gmail.com>';
-	$to = '<claudio.peralta@grupoarcano.com>';
+	$to = '<psolis@pcsaerospace.com>';
 
 	$post = array_map('htmlspecialchars', $_POST);
 
