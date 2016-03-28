@@ -79,7 +79,7 @@ $absolute_url = implode('/', array_filter($url));
               <p class="lead">a high performance option for the UH-1H</p>
               <p>
 								<a class="btn btn-lg btn-primary" href="#contact" role="button" data-toggle="modal">More Information</a><br/>
-								<small>PCS Aerospace & Marketing Chile</small>
+								<small>PCS Aerospace Technology LLC</small>
 							</p>
             </div>
           </div>
@@ -181,32 +181,20 @@ $absolute_url = implode('/', array_filter($url));
 			<div class="row spacer-30"></div>
 			<div class="row">
 				<div class="col-md-7">
-					<h3>42º Gearbox Upgrade</h3>
-					<p>Historically a weak point of the Bell UH-1H when used in extreme enviroments is the 204-040-003, 42o gearbox. While it has provided a uniquely long military service life, a better option is now available</p>
-					<p>Northwest helicopter installs upgraded 212-040-003, 42o gearbox on the performance enhanced Bell UH-1H Plus. this gearbox is virtually indestructible and with it’s 5000 hours overhaul interval is very cost effective to operate.</p>
-					<p class="text-center hidden-md hidden-lg"><span class="avionic-upgrade-2 img-rounded"></span></p>
-				</div>
-				<div class="col-md-5 text-right hidden-xs hidden-sm">
-					<span class="avionic-upgrade-2 img-rounded"></span>
-				</div>
-			</div>
-			<div class="row spacer-30"></div>
-			<div class="row">
-				<div class="col-md-5 hidden-xs hidden-sm">
-					<span class="avionic-upgrade-3 img-rounded"></span>
-				</div>
-				<div class="col-md-7">
 					<h3>Improved Vertical Spar Fin</h3>
 					<p>Another important upgrade Northwest Helicopter incorporates into all of their performance enhanced UH-1H Plus aircraft is the installation of the Global Helicopter Technology Improved Vertical Fin Spar.</p>
 					<p>The Global Spar eliminates the problems associated with the original equipment “laminated” spar that was prone to cracking. This spar is indestructible and adds to the already phenomenal safety and reliability record of the UH-1H Plus.</p>
 					<p class="text-center hidden-md hidden-lg"><span class="avionic-upgrade-3 img-rounded"></span></p>
+				</div>
+				<div class="col-md-5 hidden-xs hidden-sm">
+					<span class="avionic-upgrade-3 img-rounded"></span>
 				</div>
 			</div>
 
 			<div class="row spacer-120"></div>
 			<div class="row text-center">
 				<a class="btn btn-lg btn-primary" href="#contact" role="button" data-toggle="modal">More Information</a><br/>
-				<small>PCS Aerospace & Marketing Chile</small>
+				<small>PCS Aerospace Technology LLC</small>
 			</div>
 		</div>
 
