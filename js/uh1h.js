@@ -43,6 +43,28 @@ $("#navbar ul li a[href^='#']").on('click', function (e) {
 
 });
 
+var captchaId;
+var onloadCallback = function () {
+	captchaId = grecaptcha.render('captcha', {
+		'sitekey': '6LeY8hsTAAAAAMZ38WI-SnyIEQoMGk1PLAErJZOK'
+	});
+	$refresh = $('<button/>')
+					.attr('type', 'button')
+					.css('padding', '2px 5px')
+					.addClass('btn btn-info')
+					.addClass('pull-right')
+					.html($('<i/>').addClass('glyphicon glyphicon-refresh'))
+					.on('click', resetCaptcha);
+	$('#captcha').before($refresh);
+};
+
+var resetCaptcha = function () {
+	grecaptcha.reset(captchaId);
+};
+$('#contact').on('shown.bs.modal', resetCaptcha);
+$('#contact').on('hidden.bs.modal', function (event) {
+	$('#form-error').text('').addClass('hide');
+})
 $('#contact [type="submit"]').click(function (event) {
 	event.preventDefault();
 	$('#contact form').submit();
@@ -56,13 +78,16 @@ $('#contact form').submit(function (event) {
 	$.post($form.attr('action'), $form.serialize(), function (reply) {
 		$('#contact button').removeClass('disabled').removeAttr('disabled');
 		$('#contact [type="submit"]').html('Send');
+		console.log(reply);
 		if (reply.error) {
+			$('#form-error').text(reply.message).removeClass('hide');
 		} else {
+			$('#form-error').text('').addClass('hide');
 			$('#contact').modal('hide');
 			$form[0].reset();
 			alertModal('Successfully Sent');
 		}
-	})
+	}, 'json');
 });
 
 function alertModal(text, status) {

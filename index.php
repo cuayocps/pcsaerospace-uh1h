@@ -27,7 +27,6 @@ $absolute_url = implode('/', array_filter($url));
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
 		<link href="css/uh1h.css" rel="stylesheet"/>
-
   </head>
 	<!-- NAVBAR
 	================================================== -->
@@ -207,7 +206,13 @@ $absolute_url = implode('/', array_filter($url));
 						<h3 id="contactLabel">Contact us</h3>
 					</div>
 					<div class="modal-body clearfix">
-						<form class="form-horizontal col-sm-12" action="contactus.php">
+						<div class="col-sm-5">
+							<p><b>Address:</b><br/>19301 SW 106TH AV UNIT 14<br/>Cutler Bay, FL 33157</p>
+							<p><b>Phone:</b><br/>786 732 6068</p>
+							<p><b>Cell:</b><br/>786 512 5725</p>
+							<p><b>E-mail:</b><br/>psolis@grupoarcano.com</p>
+						</div>
+						<form class="form-horizontal col-sm-7" action="contactus.php">
 							<div class="form-group">
 								<label>Name</label>
 								<input name="name" class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"/>
@@ -225,7 +230,11 @@ $absolute_url = implode('/', array_filter($url));
 								<textarea name="message" class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea>
 							</div>
 							<div class="form-group">
-								<p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+								<div class="g-recaptcha" id="captcha"></div>
+							</div>
+							<div class="form-group">
+								<div class="alert alert-danger hide" id="form-error">The form is not valid.</div>
+							</div>
 						</form>
 					</div>
 					<div class="modal-footer">
@@ -242,6 +251,7 @@ $absolute_url = implode('/', array_filter($url));
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/uh1h.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' defer="defer"></script>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-24657063-2']);
