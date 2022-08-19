@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  pcsaerospace-uh1h:
+    container_name: uh1h.pcsaerospace.com
+    image: pcsaerospace:uh1h
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8003:80"

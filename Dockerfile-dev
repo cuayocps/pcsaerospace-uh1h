@@ -1,0 +1,7 @@
+FROM php:7.4-apache
+
+RUN pear install Mail
+
+WORKDIR /var/www/html
+
+RUN echo 'alias ll="ls -la --color"' > ~/.bashrc
